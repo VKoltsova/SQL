@@ -311,4 +311,14 @@ insert into roles_employee (employee_id, role_id)
 			(38, 3),
 			(39, 2),
 			(40, 1);
+		
+--заменили salary с id 16 на 2
+update employee_salary 
+	set salary_id=2
+	where salary_id=16
 	
+update employee_salary 
+	set salary_id=8
+	where salary_id=3
+	
+select * from employee_salary 
